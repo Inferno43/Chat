@@ -107,8 +107,5 @@ public class SignupView extends BaseFragment implements OnboardingContract.ViewS
             throw new InvalidFieldException("Please enter Username and Password correctly");
     }
 
-    @Override
-    public Context signupContext() {
-        return context;
-    }
+
 }

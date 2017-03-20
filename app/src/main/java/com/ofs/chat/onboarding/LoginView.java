@@ -100,10 +100,6 @@ public class LoginView extends BaseFragment implements OnboardingContract.ViewLo
         Snackbar.make(rootView,message,Snackbar.LENGTH_LONG).show();
     }
 
-    @Override
-    public Context loginContext() {
-        return context;
-    }
 
     @Override
     public void setBundle(Bundle args) {

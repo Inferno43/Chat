@@ -17,7 +17,6 @@ public interface OnboardingContract {
         boolean allfieldsValid() throws Exception;
         void startHome(String fireBaseUId);
         void showMessage(String message);
-        Context loginContext();
     }
 
     interface PresenterLogin extends BasePresenter{
@@ -31,7 +30,6 @@ public interface OnboardingContract {
         void showLogin(String userName,String email,String password);
         void showMessage(String message);
         boolean allFieldsValid()throws Exception;
-        Context signupContext();
     }
 
     interface PresenterSignUp extends BasePresenter{

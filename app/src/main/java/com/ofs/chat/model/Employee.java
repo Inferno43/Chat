@@ -11,25 +11,28 @@ public class Employee {
     private String employeeId;
     private String employeeName;
     private String employeeRole;
-    private String employeeDesignation;
+    private String employeeDepartment;
     private String employeeTeam;
     private String employeeEmail;
-    private String employeeLocation;
-    private String employeeExtention;
+    private String employeePhase;
+    private String employeeExtension;
 
     public Employee(String userId, String employeeImage, String employeeId, String employeeName,
-                    String employeeRole, String employeeDesignation, String employeeTeam, String employeeEmail,
-                    String employeeLocation, String employeeExtention) {
+                    String employeeRole, String employeeDepartment, String employeeTeam, String employeeEmail,
+                    String employeePhase, String employeeExtension) {
         this.userId = userId;
         this.employeeImage = employeeImage;
         this.employeeId = employeeId;
         this.employeeName = employeeName;
         this.employeeRole = employeeRole;
-        this.employeeDesignation = employeeDesignation;
+        this.employeeDepartment = employeeDepartment;
         this.employeeTeam = employeeTeam;
         this.employeeEmail = employeeEmail;
-        this.employeeLocation = employeeLocation;
-        this.employeeExtention = employeeExtention;
+        this.employeePhase = employeePhase;
+        this.employeeExtension = employeeExtension;
+    }
+
+    public Employee() {
     }
 
 
@@ -65,13 +68,6 @@ public class Employee {
         this.employeeRole = employeeRole;
     }
 
-    public String getEmployeeDesignation() {
-        return employeeDesignation;
-    }
-
-    public void setEmployeeDesignation(String employeeDesignation) {
-        this.employeeDesignation = employeeDesignation;
-    }
 
     public String getEmployeeTeam() {
         return employeeTeam;
@@ -89,15 +85,13 @@ public class Employee {
         this.employeeImage = employeeImage;
     }
 
-    public String getEmployeeExtention() {
-        return employeeExtention;
+    public String getEmployeeExtension() {
+        return employeeExtension;
     }
 
-    public void setEmployeeExtention(String employeeExtention) {
-        this.employeeExtention = employeeExtention;
+    public void setEmployeeExtension(String employeeExtension) {
+        this.employeeExtension = employeeExtension;
     }
-
-
 
     public void setEmployeeDomain(String employeeImage) {
         this.employeeImage = employeeImage;
@@ -111,11 +105,19 @@ public class Employee {
         this.employeeEmail = employeeEmail;
     }
 
-    public String getEmployeeLocation() {
-        return employeeLocation;
+    public String getEmployeePhase() {
+        return employeePhase;
     }
 
-    public void setEmployeeLocation(String employeeLocation) {
-        this.employeeLocation = employeeLocation;
+    public void setEmployeePhase(String employeePhase) {
+        this.employeePhase = employeePhase;
+    }
+
+    public String getEmployeeDepartment() {
+        return employeeDepartment;
+    }
+
+    public void setEmployeeDepartment(String employeeDepartment) {
+        this.employeeDepartment = employeeDepartment;
     }
 }

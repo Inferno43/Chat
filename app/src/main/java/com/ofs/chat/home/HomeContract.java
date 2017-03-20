@@ -1,7 +1,5 @@
 package com.ofs.chat.home;
 
-import android.content.Context;
-
 import com.ofs.chat.BasePresenter;
 import com.ofs.chat.BaseView;
 import com.ofs.chat.model.Employee;
@@ -24,17 +22,19 @@ public interface HomeContract {
 
         void showMessage(String message);
         void showProgress(boolean show);
+        void showProfile(Employee employee);
+        void chooseFile();
         boolean isprofileComplete();
         boolean allFieldsValid() throws Exception;
-        void showProfile(Employee employee);
+        String getSharedPrefValue(String key);
 
     }
     interface PresenterProfile extends BasePresenter{
 
         void loadProfile(String userId);
         void saveProfile(Employee employee) throws Exception;
-        void editProfile();
-        void setContext(Context context);
+        void editProfile(Employee employee);
+        void uploadProfilePic();
 
     }
 
@@ -43,6 +43,14 @@ public interface HomeContract {
     }
 
     interface PresenterSettings extends BasePresenter{
+
+    }
+
+    interface ViewAddteam extends BaseView<PresenterAddTeam>{
+
+    }
+
+    interface PresenterAddTeam extends BasePresenter{
 
     }
 }
